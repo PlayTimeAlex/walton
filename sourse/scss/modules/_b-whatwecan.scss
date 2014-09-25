@@ -1,0 +1,165 @@
+.b-whatwecan{
+    background-color: #1877ba;
+    padding: em(59) 0 em(49);
+    overflow: hidden;
+    &__column{
+        float: left;
+        width: 50%;
+        position: relative;
+    }
+    $pt: em(20);
+    &__col1{
+        width: 240px;
+        float: left;
+        box-sizing: border-box;
+        padding: 0 0 0 em(19);
+    }
+    &__col2{
+        padding: $pt em(40) 0 em(30);
+        overflow: hidden;
+    }
+    &__col3{
+        width: 205px;
+        float: left;
+        padding: $pt 0 0 em(45);
+    }
+    &__col4{
+        overflow: hidden;
+        padding: $pt 0 0 em(25);
+    }
+    h3{
+        color: #fff;
+        $font-size: 19;
+        font-size: em($font-size);
+        font-weight: 800;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 1.3;
+        padding-bottom: em(11, $font-size);
+        margin-bottom: em(17, $font-size);
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 63px;
+            height: 3px;
+            background-color: #4692c8;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    p{
+        color: #fff;
+        $font-size: 15;
+        font-size: em($font-size);
+        line-height: 1.25;
+        padding: 0 0 em(20, $font-size);
+    }
+    &__slogan{
+        color: #fff;
+        text-transform: uppercase;
+        $font-size: 47;
+        font-size: em($font-size);
+        font-weight: 200;
+        line-height: 0.81;
+        position: relative;
+        padding: em(95, $font-size) 0;
+        .can{
+            font-size: em(58, $font-size);
+            font-weight: 700;
+        }
+        .canend{
+            font-size: em(58, $font-size);
+        }
+        .best{
+            font-size: em(23, $font-size);
+            font-weight: 500;
+            text-transform: none;
+            letter-spacing: 9.5px;
+            line-height: 1.3;
+            display: block;
+        }
+    }
+    &__slogan2{
+        color: #fff;
+        $font-size: 32;
+        font-size: em($font-size);
+        font-weight: 200;
+        position: relative;
+        padding: em(95, $font-size) 0;
+        .walton{
+            color: #0095ff;
+            font-size: em(61, $font-size);
+            font-weight: 800;
+            display: block;
+            line-height: .85;
+        }
+        .universal{
+            color: #0095ff;
+            font-size: em(36, $font-size);
+            display: block;
+            line-height: 1.3;
+            &:after{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 60px;
+                background-color: #0096ff;
+                height: 6px;
+                margin: -5px 0 0 10px;
+            }
+        }
+    }
+    &__slogan-top, &__slogan-bottom{
+        position: absolute;
+        height: 13px;
+        background-color: #fff;
+        width: 5000px;
+        right: 50%;
+        top: 0;
+        &:before{
+            content:"";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 50px;
+            width: 13px;
+            background-color: #fff;
+        }
+    }
+    &__slogan-bottom{
+        top:auto;
+        bottom: 0;
+        &:before{
+            top:auto;
+            bottom: 0;
+        }
+    }
+    &_transparent{
+        background-color: transparent;
+        padding: em(36) 0 em(57);
+        h3{
+            $font-size: 19;
+            line-height: 0.95;
+            padding-bottom: em(21, $font-size);
+            margin-bottom: em(12, $font-size);
+            &:after{
+                height: 4px;
+                background-color: #0096ff;
+                border-radius: 1px;
+                width: 28px;
+            }
+        }
+    }
+    $pt: em(17);
+    &_transparent &__col2{
+        padding: $pt em(20) 0 em(72);
+    }
+    &_transparent &__col3{
+        padding: $pt 0 0 em(45);
+    }
+    &_transparent &__col4{
+        padding: $pt em(60) 0 em(16);
+    }
+}

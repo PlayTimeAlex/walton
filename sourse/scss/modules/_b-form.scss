@@ -1,0 +1,85 @@
+.b-form{
+    background-color: #0096ff;
+    padding: em(27) em(19);
+    box-sizing: border-box;
+    &__title{
+        color: #f1f5f8;
+        $font-size: 20;
+        font-size: em($font-size);
+        font-weight: 800;
+        line-height: 1.05;
+        text-transform: uppercase;
+        padding-bottom: em(24, $font-size);
+    }
+    &__submit{
+        display: block;
+        box-sizing: border-box;
+        line-height: 1.5;
+        $background-color: #000;
+        background-color: $background-color;
+        color: #fff;
+        font-family: "BlissPro";
+        $font-size: 17;
+        font-size: em($font-size);
+        font-weight: 800;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: em(13, $font-size) 0;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color .3s;
+        &:hover{
+            background-color: lighten($background-color, 10);
+        }
+    }
+    &__el{
+        padding-bottom: em(15);
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+    &__text, &__textarea{
+        $background-color: #058ae8;
+        background-color: $background-color;
+        font-family: $base__font;
+        border: 0;
+        $font-size: 11;
+        margin: 0;
+        padding: 0 em(20, $font-size);
+        opacity: 0.99;
+        $color: #fff;
+        color: $color;
+        font-size: em($font-size);
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        height: em(41, $font-size);
+        transition: background-color .3s;
+        &:focus{
+            background-color: darken($background-color, 10);
+        }
+        &::-webkit-input-placeholder {
+            color: darken($color, 30);
+        }
+        &::-moz-placeholder {
+            color: darken($color, 30);
+        }
+        &:-ms-input-placeholder {
+            color: darken($color, 30);
+        }
+    }
+    &__textarea{
+        height: auto;
+        resize: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &_footer{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 258px;
+        z-index: 10;
+    }
+}

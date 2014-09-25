@@ -1,0 +1,108 @@
+.b-header{
+    position: relative;
+    min-height: 600px;
+    &__header{
+        height: em(74);
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    &__logo{
+        display: block;
+        width: 157px;
+        height: em(74);
+        background-color: #0077C0;
+        display: flex;
+        display: box;
+        float: left;
+        img{
+            display: block;
+            margin: 0 auto;
+            align-self: center;
+
+        }
+    }
+    &__nav{
+        position: relative;
+        padding-left: em(13);
+        float: left;
+        > a{
+            $font-size: 15;
+            font-size: em($font-size);
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+            line-height: 1.3;
+            margin: 0 em(14, $font-size);
+            padding: em(27, $font-size) 0 em(25, $font-size);
+            position: relative;
+            display: inline-block;
+            &:before{
+                content:"";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 18px;
+                border-left:1px solid #e5e5e5;
+            }
+            .text{
+                display: inline-block;
+                border-bottom: 1px dotted #999999;
+                &:hover{
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+    &__tel{
+        color: #000;
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 500;
+        height: em(74, $font-size);
+        box-sizing: border-box;
+        float: left;
+        padding: em(27, $font-size) em(15, $font-size) 0 40px;
+        border-left: 1px solid #f7f7f7;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ2RTc3QjMzNDNGRjExRTQ4RUMxRTYwQTg2QzA4QTlBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ2RTc3QjM0NDNGRjExRTQ4RUMxRTYwQTg2QzA4QTlBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNzdCMzE0M0ZGMTFFNDhFQzFFNjBBODZDMDhBOUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNzdCMzI0M0ZGMTFFNDhFQzFFNjBBODZDMDhBOUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4SEdkIAAAAUElEQVR42mJkKNr5nwEK/ve6MTLgAEzIHMbiXf+JUogPoCikjtXopuBSzAKlJwBxAZpiZLEJjP///4dJ9iMrxulGoBMKoaZgBXATCbkTIMAAnv8gIrykARYAAAAASUVORK5CYII=) no-repeat 20px center;
+    }
+    &__left{
+        float: left;
+    }
+    &__right{
+        float: right;
+    }
+    &__lang{
+        float: left;
+        $font-size: 14;
+        font-size: em($font-size);
+        height: em(74, $font-size);
+        box-sizing: border-box;
+        position: relative;
+        $background-color: #f6f6f6;
+        background-color: $background-color;
+        padding: em(27, $font-size) em(25, $font-size) 0 em(29, $font-size);
+        color: #000;
+        min-width: 175px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: background-color .3s;
+        &:hover{
+            background-color: darken($background-color, 5);
+        }
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            border-top: 3px solid #000;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            margin-top: -2px;
+        }
+    }
+}

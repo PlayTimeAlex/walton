@@ -54,6 +54,9 @@
         font-size: em($font-size);
         line-height: 1.25;
         padding: 0 0 em(20, $font-size);
+        .walton{
+            color: #0096ff;
+        }
     }
     &__slogan{
         color: #fff;

@@ -211,10 +211,14 @@ a:hover {
   .b-header__header {
     height: 7.4em;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
+    min-width: 1012px;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 200;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
   .b-header__logo {
     display: block;
     width: 157px;
@@ -352,6 +356,8 @@ a:hover {
     font-size: 1.5em;
     line-height: 1.25;
     padding: 0 0 1.33333em; }
+    .b-whatwecan p .walton {
+      color: #0096ff; }
   .b-whatwecan__slogan {
     color: #fff;
     text-transform: uppercase;
